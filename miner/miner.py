@@ -41,7 +41,7 @@ if __name__ == '__main__':
     # Run forever until interrupted
     while True:
         headers = { "content-type": "application/json",
-                    "Authorization": f'Token 83836d69849450074fcc3292ee2d6a3975d46574'}
+                    "Authorization": f'Token '}
         # Get the last proof from the server
         r = requests.get(url=node + "/last_proof", headers=headers)
         data = r.json()
